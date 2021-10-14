@@ -1,0 +1,16 @@
+.heading-primary{
+    font-size: 4.4rem;
+    color:$color-light
+}
+.heading-secondary{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color:$color-primary;
+}
+.heading-tertiary{
+    @include centerVerFlex;
+    gap:1.2rem;
+    font-size: 1.4rem;
+    color:#333;
+    cursor: pointer;
+}

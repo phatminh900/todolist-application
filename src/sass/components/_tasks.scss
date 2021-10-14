@@ -1,0 +1,63 @@
+.tasks{
+    padding:3.2rem  2.4rem;
+
+    &__completed-container{
+        margin-top: 2.4rem;
+    }
+    
+    // close stage
+    &__completed-container.close  .icon--chevron-right{
+            transform: rotate(0);
+    }
+    &__completed-container.close  &__list--completed{
+        @include hidden
+}
+
+    &__completed-title{
+        @include centerVerFlex;
+    }
+
+    &__count{
+        font-size: $default-font-size;
+        margin-left: auto;
+        margin-right: 3.2rem;
+        color:$color-grey-dark
+    }
+
+    &__title{
+        display: flex;
+    }
+    &__delete-btn{
+        margin-left: auto;
+        align-self: center;
+        cursor: pointer;
+    }
+    &__time{
+        color:#777;
+    }
+
+    &__list{
+        list-style: none;
+      
+    }
+    &__item{
+        width: 100%;
+        padding:1.6rem 2.4rem 1rem 0;
+        border-bottom: 1px solid $color-grey-dark;
+        @include centerVerFlex;
+        gap:2.4rem;
+        font-size: $default-font-size;
+      
+    }
+    // checked
+    &__item.checked &__name{
+        text-decoration: line-through;
+    }
+
+    &__name{
+        display: block;
+    }
+    &__time{
+        font-size: 1.2rem;
+    }
+}

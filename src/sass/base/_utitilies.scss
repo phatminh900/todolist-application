@@ -1,0 +1,33 @@
+
+
+.none{
+    display: none;
+}
+.custom-circle{
+    
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    border:1px solid #333;
+    // display: none;
+}
+
+
+// checked
+.checked{
+    opacity: 0.4;
+
+}
+
+
+// hidden
+.hidden{
+ @include hidden
+}
+
+
+// active task
+.active-list{
+    color:$color-light;
+  
+}

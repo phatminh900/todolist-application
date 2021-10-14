@@ -1,0 +1,38 @@
+.form{
+    margin-top: 2.4rem;
+    display: flex;
+    gap:1.6rem;
+    // margin-bottom: 1.6rem;
+    color:$color-grey-dark;
+    padding:1.2rem 2.4rem;
+    &--list{
+        display: flex;
+        color:blue;
+        &>input::placeholder,.icon{
+            color:$color-primary;
+        }
+        & input{
+            background: none;
+           
+        }
+
+        &:hover{
+         
+                background-color: $color-grey-light;
+         
+        }
+    }
+
+    &--task{
+        padding-bottom: 10px;
+
+        border-bottom: 1px solid $color-grey-dark;
+
+    }
+    &__input{
+        border:none;
+        outline: none;
+        width: 100%;
+  
+    }
+}

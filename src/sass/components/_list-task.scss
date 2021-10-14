@@ -1,0 +1,37 @@
+.list-tasks{
+    padding-top: 3.2rem;
+    border-right: 1px solid #ccc;
+    min-height: 100vh;
+    background-color: $color-grey;
+    &>*{
+        padding: 1.2rem 0;
+        @include respond(tab-port){
+            padding:1rem 0;
+        }
+    }
+  
+}
+
+
+.list-task{
+    // padding:1.2rem 2.4rem;
+    display: flex;
+    @include centerVerFlex;
+    gap:1.2rem;
+    font-size: $default-font-size;
+    // margin-bottom: 1.6rem;
+    cursor: pointer;
+    padding:1.2rem 2.4rem;
+    width: 100%;
+    &:hover{
+        background-color: darken($color-grey, $amount: 2);
+    }
+    &.active-list .heading-tertiary{
+        color:$color-primary
+    }
+
+    &--active-list{
+        background-color: $color-grey-dark;
+    }
+}
+

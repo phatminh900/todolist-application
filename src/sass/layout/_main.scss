@@ -1,0 +1,8 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    @include respond(phone){
+    grid-template-columns: 3fr 8fr;
+
+    }
+}

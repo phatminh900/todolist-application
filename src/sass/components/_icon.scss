@@ -1,0 +1,28 @@
+.icon{
+    width: 2.4rem;
+    height:2.4rem;
+   
+        cursor: pointer;
+    &--circle{
+        border-color: $color-primary;
+    }
+    &--circle-check{
+        color:$color-primary;
+    }
+    &--add,&--chevron-right{
+        color:$color-grey-dark;
+        transform: rotate(90deg);
+    }
+    &--delete{
+        color:$color-secondary;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &--list{
+        color:$color-primary
+    }
+    &--sun{
+        color:$color-secondary
+    }
+}
