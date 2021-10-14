@@ -83,6 +83,10 @@ taskCompletedView.render(model.state.lists, model.state.selectedId);
 tasksView.displayCountCompletedTask();
 }
 
+function addNewFeature(){
+  console.log('Welcome to the application');
+}
+
 function init() {
   listView.addHandlerRender(controllAddList);
   listView.addHandlerActiveList(controllListActive);
@@ -102,6 +106,6 @@ function init() {
   taskUncompletedView.addHandlerDelete(controllDeleteTask);
   taskCompletedView.addHandlerUnChecked(controllUnCheckedStage);
   taskCompletedView.addHandlerDelete(controllDeleteTask);
-  console.log('Modified');
+  addNewFeature()
 }
 init();
