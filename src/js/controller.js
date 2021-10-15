@@ -102,5 +102,6 @@ function init() {
   taskUncompletedView.addHandlerDelete(controllDeleteTask);
   taskCompletedView.addHandlerUnChecked(controllUnCheckedStage);
   taskCompletedView.addHandlerDelete(controllDeleteTask);
+  console.log('welcome to the application');
 }
 init();
