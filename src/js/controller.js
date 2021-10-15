@@ -18,10 +18,10 @@ function controllListActive(id) {
   //add selected id
   model.addSelectedList(+id);
 
-//   render list
+  //   render list
   listView.render(model.state.lists, model.state.selectedId);
 
-//   render uncompleted/completedtask task 
+  //   render uncompleted/completedtask task
   taskUncompletedView.render(model.state.lists, model.state.selectedId);
 
   taskCompletedView.render(model.state.lists, model.state.selectedId);
@@ -31,60 +31,56 @@ function controllListActive(id) {
 }
 
 function controllTask() {
-    //render coresponding task
+  //render coresponding task
   taskView.render(model.state.lists, model.state.selectedId);
 }
 
 function controllAddTask(newTask) {
-    //add new task
+  //add new task
   model.addTask(newTask);
-    //render in uncompleted task
+  //render in uncompleted task
   taskUncompletedView.render(model.state.lists, model.state.selectedId);
 }
 
 function controlDeleteList(id) {
-    // delete list
+  // delete list
   model.deleteList(id);
 
-//   render list task
+  //   render list task
   listView.render(model.state.lists);
   taskView.render(model.state.lists);
 }
 
 function controllCheckedStage(id) {
-    //toggle completed task
+  //toggle completed task
   model.toggleCheckedStage(id);
 
-//   render completed/uncompleted task
+  //   render completed/uncompleted task
   taskUncompletedView.render(model.state.lists, model.state.selectedId);
   taskCompletedView.render(model.state.lists, model.state.selectedId);
-//   update completed count
+  //   update completed count
   tasksView.displayCountCompletedTask();
 }
 function controllUnCheckedStage(id) {
-     //toggle completed task
+  //toggle completed task
   model.toggleUnCheckedStage(id);
 
-//   render completed/uncompleted task
-taskUncompletedView.render(model.state.lists, model.state.selectedId);
-taskCompletedView.render(model.state.lists, model.state.selectedId);
-//   update completed count
-tasksView.displayCountCompletedTask();
+  //   render completed/uncompleted task
+  taskUncompletedView.render(model.state.lists, model.state.selectedId);
+  taskCompletedView.render(model.state.lists, model.state.selectedId);
+  //   update completed count
+  tasksView.displayCountCompletedTask();
 }
 
 function controllDeleteTask(id) {
-    // delete task
+  // delete task
   model.deleteTask(id);
 
-//   render completed/uncompleted task
-taskUncompletedView.render(model.state.lists, model.state.selectedId);
-taskCompletedView.render(model.state.lists, model.state.selectedId);
-//   update completed count
-tasksView.displayCountCompletedTask();
-}
-
-function addNewFeature(){
-  console.log('Welcome to the application');
+  //   render completed/uncompleted task
+  taskUncompletedView.render(model.state.lists, model.state.selectedId);
+  taskCompletedView.render(model.state.lists, model.state.selectedId);
+  //   update completed count
+  tasksView.displayCountCompletedTask();
 }
 
 function init() {
@@ -106,6 +102,5 @@ function init() {
   taskUncompletedView.addHandlerDelete(controllDeleteTask);
   taskCompletedView.addHandlerUnChecked(controllUnCheckedStage);
   taskCompletedView.addHandlerDelete(controllDeleteTask);
-  addNewFeature()
 }
 init();
