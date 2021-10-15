@@ -4,7 +4,11 @@
     gap:1.6rem;
     // margin-bottom: 1.6rem;
     color:$color-grey-dark;
+ 
     padding:1.2rem 2.4rem;
+    @include respond(phone){
+        padding: 1rem;
+    }
     &--list{
         display: flex;
         color:blue;
