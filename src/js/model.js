@@ -86,6 +86,7 @@ export function deleteTask(id) {
 
 function saveLocal() {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(state.lists));
+
   localStorage.setItem(LOCAL_STORAGE_KEY_SELECTED_ID, state.selectedId);
 }
 
