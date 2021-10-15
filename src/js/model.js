@@ -74,7 +74,7 @@ export function deleteTask(id) {
   const taskCompletedIndex = listEl.tasksCompleted.findIndex(
     (task) => task.id === taskEl.id
   );
-  console.log(taskCompletedIndex);
+
   if (taskUncompletedIndex !== -1)
     listEl.tasksUncompleted.splice(taskUncompletedIndex, 1);
 

@@ -9,7 +9,7 @@ import taskUncompletedView from "./views/taskUncompletedView.js";
 function controllAddList(newList) {
   // Add new List
   model.addList(newList);
-  console.log(model.state.lists);
+
 
   // Render New list
   listView.render(model.state.lists);
@@ -102,6 +102,6 @@ function init() {
   taskUncompletedView.addHandlerDelete(controllDeleteTask);
   taskCompletedView.addHandlerUnChecked(controllUnCheckedStage);
   taskCompletedView.addHandlerDelete(controllDeleteTask);
-  console.log('welcome to the application');
+
 }
 init();
