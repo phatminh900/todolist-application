@@ -220,6 +220,12 @@ body {
   color: #868e96;
 }
 
+@media (max-width: 37.5em) {
+  .tasks__count {
+    margin-right: 2.4rem;
+  }
+}
+
 .tasks__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,9 +234,8 @@ body {
 
 .tasks__delete-btn {
   margin-left: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   cursor: pointer;
 }
 

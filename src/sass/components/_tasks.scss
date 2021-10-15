@@ -23,6 +23,9 @@
         font-size: $default-font-size;
         margin-left: auto;
         margin-right: 3.2rem;
+        @include respond(phone){
+            margin-right: 2.4rem;
+        }
         color:$color-grey-dark
     }
 
@@ -31,7 +34,7 @@
     }
     &__delete-btn{
         margin-left: auto;
-        align-self: center;
+        align-self: flex-start;
         cursor: pointer;
     }
     &__time{

@@ -84,6 +84,7 @@ function controllDeleteTask(id) {
 }
 
 function init() {
+ window.addEventListener('load',()=>{
   listView.addHandlerRender(controllAddList);
   listView.addHandlerActiveList(controllListActive);
 
@@ -102,6 +103,7 @@ function init() {
   taskUncompletedView.addHandlerDelete(controllDeleteTask);
   taskCompletedView.addHandlerUnChecked(controllUnCheckedStage);
   taskCompletedView.addHandlerDelete(controllDeleteTask);
+ })
 
 }
 init();
