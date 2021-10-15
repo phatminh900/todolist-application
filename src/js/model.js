@@ -106,6 +106,7 @@ function clearLocal() {
 
 function init() {
   getLocal();
+  // unshift my day list
   !state.lists.some((list) => list.id === 1)
     ? state.lists.unshift({
         id: 1,
