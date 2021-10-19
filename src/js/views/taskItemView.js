@@ -44,6 +44,7 @@ class TaskItemView extends View {
     if (days === 3) return "3 days ago";
     if (days === 4) return "4 days ago";
     return `${new Date(date).getDate()}/${new Date(date).getMonth()}`;
+
   }
 }
 export default new TaskItemView();

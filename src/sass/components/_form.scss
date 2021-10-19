@@ -28,15 +28,20 @@
     }
 
     &--task{
-        padding-bottom: 10px;
+        padding:1.2rem 0 1rem 0;
 
         border-bottom: 1px solid $color-grey-dark;
+        
 
     }
     &__input{
         border:none;
         outline: none;
         width: 100%;
-  
+      
+    }
+
+    &--active{
+            border-bottom: 2px solid $color-grey-dark;
     }
 }
